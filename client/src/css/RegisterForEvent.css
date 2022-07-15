@@ -1,0 +1,93 @@
+.register-for-event {
+  display: flex;
+  justify-content: center;
+}
+
+.register-for-event-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registration-input {
+  margin: var(--margin-from-navbar) auto 0 auto;
+  width: 50%;
+}
+
+.delete-registration-input {
+  margin: 2rem auto 0 auto;
+  width: 50%;
+}
+
+.registration-form {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 1.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.registration-user-input {
+  margin-bottom: 0.5rem;
+  height: 1.5rem;
+  background-color: lightgrey;
+  cursor: not-allowed;
+}
+
+.registration-btn {
+  height: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.delete-registration-btn {
+  background-color: #f55656;
+  border-radius: 0.35rem;
+}
+
+/* mobile landscape view */
+@media screen and (min-width: 500px) {
+  .registration-input {
+    width: 35%;
+  }
+
+  .delete-registration-input {
+    width: 35%;
+  }
+
+  .select-seat-in-hall {
+    width: 63%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .register-for-event {
+    /* width: 100%; */
+  }
+
+  .register-for-event-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+  }
+
+  .registration-input, .delete-registration-input {
+    width: 90%;
+  }
+
+  .select-seat-in-hall {
+    width: 135%;
+  }
+
+  .hall-reservations {
+
+  }
+}
+
+.registration-user-input {
+  display: block;
+}

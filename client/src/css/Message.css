@@ -1,0 +1,26 @@
+.message {
+  position: absolute;
+  top: 4rem;
+  left: 2%;
+  width: 96%;
+  height: 3.5rem;
+  background-color: aquamarine;
+  opacity: 0.89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.true {
+  background-color: lightpink;
+}
+
+.message-container p {
+  font-weight: 600;
+}
+
+.close-message {
+  position: absolute;
+  top: 0.3rem;
+  left: 95%;
+}

@@ -1,0 +1,39 @@
+.logout {
+  width: 13rem;
+  margin: var(--margin-from-navbar) auto;
+}
+
+.logout-container {
+  padding: 0.7rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.logout-confirm {
+  margin-bottom: 1rem;
+}
+
+.logout-options {
+  display: flex;
+}
+
+.logout-btn {
+  padding: 0.3rem 1.0rem;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.0rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.yes-logout {
+  margin-right: 2rem;
+}
+
+.no-logout {
+  background-color: lightgreen;
+}

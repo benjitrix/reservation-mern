@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --min-width-800px: 92%;
+  --margin-from-navbar: 6rem
+}

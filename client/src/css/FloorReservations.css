@@ -1,0 +1,144 @@
+.hall-reservations {
+  /* width: 100%; */
+  margin-top: 2.0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hall-reservations-container {
+  width: 90%;
+}
+
+.hall-reservations-container > h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#main-hall {
+  margin-top: 2rem;
+}
+
+#main-hall-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-hall {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.right-wing {
+  margin-top: 1.0rem;
+}
+
+.left-wing-column-letters {
+  /* margin-left: 2.1rem;
+  margin-bottom: 0.4rem; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.1rem;
+  margin-left: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.right-wing-column-letters {
+  /* margin-left: 0.25rem;
+  margin-bottom: 0.4rem; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  margin-right: 1.0rem;
+  margin-left: 0.0rem;
+  margin-bottom: 4px;
+}
+
+.column{
+  /* display: inline-block;
+  margin-right: 1.25rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.left-row-numbers {
+  margin-left: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.right-row-numbers {
+  margin-left: -0.5rem;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.row {
+  /* margin-bottom: 0.35rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.row-numbers-left-seats {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.row-numbers-right-seats {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+.left-seats, .right-seats {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.15rem;
+}
+
+@media screen and (min-width: 800px) {
+  .hall-reservations {
+    margin-top: var(--margin-from-navbar);
+  }
+
+  .hall-reservations-container {
+    width: 90%;
+  }
+
+  .main-hall {
+    width: 68%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .right-wing {
+    margin-top: 0rem;
+  }
+
+  .left-wing > h1, .right-wing > h1 {
+    text-align: center;
+  }
+
+  .left-wing-column-letters {
+    margin-left: 2.3rem;
+  }
+
+  .column{
+    margin-right: 1.54rem;
+  }
+}
+

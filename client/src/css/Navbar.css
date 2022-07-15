@@ -1,0 +1,122 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightslategray;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.nav-logo-bars {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.user-bars {
+  display: flex;
+  align-items: center;
+}
+
+.bars {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.links {
+  height: 0rem;
+  background-color: lightslategray;
+  overflow: hidden;
+  transition: height 0.38s ease-in-out;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.link:hover {
+  background-color: rgb(192, 200, 207);
+  color: #0000ff;
+  padding-left: 1.0rem;
+}
+
+.username-mobile {
+  color: darkblue;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  font-size: 1.0rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+.username-desktop {
+  display: none;
+}
+
+.open {
+  height: 9.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo-bars {
+    display: block;
+  }
+
+  .username-mobile {
+    display: none;
+  }
+
+  .username-desktop {
+    display: block;
+    color: darkblue;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-right: 2rem;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    overflow: visible;
+    height: 3rem;
+    transition: none;
+  }
+
+  .link:hover {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    
+  }
+
+  .link:active {
+    background-color: rgb(192, 200, 207);
+  }
+}
