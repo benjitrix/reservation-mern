@@ -1,5 +1,7 @@
-const url = '/api/v1/reservation'
-const urls = '/api/v1/reservations'
+import { ServerURL } from './ServerURL'
+
+const url = ServerURL + '/api/v1/reservation'
+const urls = ServerURL + '/api/v1/reservations'
 
 export default {
   getAllReservations: () => {

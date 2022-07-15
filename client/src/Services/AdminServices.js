@@ -1,4 +1,6 @@
-const url = '/api/v1/admin'
+import { ServerURL } from './ServerURL'
+
+const url = ServerURL + '/api/v1/admin'
 
 export default {
   adminRegisterForEvent: (registration, token) => {

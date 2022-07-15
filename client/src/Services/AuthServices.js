@@ -1,4 +1,6 @@
-const url = '/api/v1/user'
+import { ServerURL } from './ServerURL'
+
+const url = ServerURL + '/api/v1/user'
 
 export default {
   registerUser: (user) => {
