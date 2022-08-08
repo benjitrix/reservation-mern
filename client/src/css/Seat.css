@@ -1,0 +1,66 @@
+.seat {
+  cursor: pointer;
+}
+
+.seat-container {
+  /* width: 50px;
+  height: 60px; */
+  position: relative;
+  margin-left: 0px;
+}
+
+.card-front, .card-back {
+  width: 20px;
+  height: 25px;
+  border: 1px solid #000;
+  background-color: rgb(118, 211, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.35s ease-in-out;
+}
+
+.card-back {
+  background-color: rgb(240, 97, 97);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  cursor: not-allowed;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.user-reservation {
+  background-color: gold;
+}
+
+.status {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.show {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  border: 1px solid #000;
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: blue;
+  border-radius: 20%;
+}
+
+.no-show {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+}
+

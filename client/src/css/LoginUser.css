@@ -1,0 +1,29 @@
+.login-user {
+  margin-top: var(--margin-from-navbar);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-user h1 {
+  margin-bottom: 1.0rem;
+}
+
+.login-user-container {
+  border: 1.5px solid #000;
+  border-radius: 1.0rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.login-user-input {
+  display: block;
+  width: 15rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-user-container p {
+  text-align: center;
+}
