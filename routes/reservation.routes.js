@@ -6,7 +6,7 @@ const { getAllReservations,getReservation, registerReservation, updateReservatio
 router.get('/all', getAllReservations)
 router.get('/user', getReservation)
 router.post('/register', registerReservation)
-router.patch('/update/:id', updateReservation)
+router.patch('/update', updateReservation)
 router.delete('/delete', deleteReservation)
 
 module.exports = router

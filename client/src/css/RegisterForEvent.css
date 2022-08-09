@@ -15,7 +15,7 @@
   width: 50%;
 }
 
-.delete-registration-input {
+.update-registration-input, .delete-registration-input {
   margin: 2rem auto 0 auto;
   width: 50%;
 }
@@ -35,12 +35,15 @@
   height: 1.5rem;
   background-color: lightgrey;
   cursor: not-allowed;
+  font-size: 0.90rem;
+  padding-left: 5px;
 }
 
 .registration-btn {
-  height: 1.5rem;
-  font-size: 0.85rem;
+  height: 1.8rem;
+  font-size: 0.90rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .delete-registration-btn {
@@ -75,8 +78,8 @@
     grid-template-columns: 0.5fr 2.5fr;
   }
 
-  .registration-input, .delete-registration-input {
-    width: 90%;
+  .registration-input, .update-registration-input, .delete-registration-input {
+    width: 92%;
   }
 
   .select-seat-in-hall {

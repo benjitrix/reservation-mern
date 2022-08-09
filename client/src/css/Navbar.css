@@ -30,8 +30,13 @@
 }
 
 .bars {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
+}
+
+.times {
+  font-size: 1.4rem;
+  color: #ff0000;
 }
 
 .links {
@@ -90,7 +95,9 @@
   }
 
   .username-desktop {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: darkblue;
     text-transform: capitalize;
     padding: 0.5rem;
@@ -99,24 +106,29 @@
     margin-right: 2rem;
   }
 
-  .bars {
+  .bars, .times {
     display: none;
   }
 
   .links {
+    width: 32%;
     display: flex;
+    justify-content: space-between;
     overflow: visible;
     height: 3rem;
     transition: none;
   }
 
-  .link:hover {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
     
   }
 
-  .link:active {
+  .active {
     background-color: rgb(192, 200, 207);
+    color: blue;
   }
 }

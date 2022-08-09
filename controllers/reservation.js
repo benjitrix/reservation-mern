@@ -67,24 +67,27 @@ const registerReservation = asyncWrapper(async (req, res, next) => {
 
 // update reservation
 const updateReservation = asyncWrapper(async (req, res, next) => {
-  const id = req.params.id
+  console.log(req.body);
 
+  // change update elements into object form
   let reservationObj = {}
   const updateReservation = req.body
   for (const key in updateReservation) {
+    if (key === 'position' || key === 'wing')
     reservationObj[key] = updateReservation[key]
   }
 
-  const reservation = await Reservation.findOneAndUpdate({_id: id}, reservationObj, {new: true, runValidators: true})
+  // check if reservation exists and update if it does
+  const reservation = await Reservation.findOneAndUpdate({registrantId: req.user.userId}, reservationObj, {new: true, runValidators: true})
   if (!reservation) {
     throw new BadRequestError('Reservation update not successful')
   }
 
   res.status(200).json({message: {
-    msgBody: `New reservation is: -${reservation.seatNr}`,
+    msgBody: `New reservation is: -${reservation.position}, ${reservation.wing}`,
     msgError: false,
     isAuthenticated: true,
-    reservation: reservation.seatNr
+    reservation: [reservation.position, reservation.wing]
   }})
 })
 

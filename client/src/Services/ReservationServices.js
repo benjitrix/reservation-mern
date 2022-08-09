@@ -1,8 +1,10 @@
 // reservation services
 import { ServerURL } from './ServerURL'
 
-const url = ServerURL + 'api/v1/reservation'
-const urls = ServerURL + 'api/v1/reservations'
+// const url = ServerURL + 'api/v1/reservation'
+// const urls = ServerURL + 'api/v1/reservations'
+const url = 'api/v1/reservation'
+const urls = 'api/v1/reservations'
 
 export default {
   getAllReservations: () => {
@@ -27,10 +29,14 @@ export default {
     }).then(res => res.json())
       .then(data => data)
   },
-  updateReservation: (id, token) => {
-    return fetch(`${url}/update/${id}`, {
+  updateReservation: (update, token) => {
+    return fetch(`${url}/update`, {
       method: 'PATCH',
-      headers: { Authorization: token }
+      body: JSON.stringify(update),
+      headers: { 
+        "Content-Type": "application/json",
+        Authorization: token 
+      }
     }).then(res => res.json())
       .then(data => data)
   },
